@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.LinkedList;
 import java.util.List;
 
 public class ArrayListDemo {
@@ -31,5 +32,11 @@ public class ArrayListDemo {
         while (iterator.hasNext()) {
             System.out.println(iterator.next());
         }
+
+        List<String> list1=new LinkedList<>();
+        list1.add("1");
+        list1.add("2");
+        list1.add("3");
+        System.out.println(list1.get(1));
     }
 }

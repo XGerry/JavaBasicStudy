@@ -27,9 +27,26 @@ public class StringDemo {
         System.out.println(stringBuffer);
         System.out.println(stringBuffer.reverse());
 
-        StringBuilder sb=new StringBuilder("Test1");
-        int size=sb.capacity();
+        StringBuilder sb = new StringBuilder("Test1");
+        int size = sb.capacity();
         System.out.println(size);
+
+        //System.exit(0);
+
+        String aa = new String("ab");
+        String bb = new String("ab");
+        String aaa = "ab";
+        String bbb = "ab";
+        System.out.println(aa.hashCode()+"/"+bb.hashCode()+"/"+aaa.hashCode()+"/"+bbb.hashCode());
+        if (aa == bb)
+            System.out.println("aa==bb");
+        if (aaa == bbb)
+            System.out.println("aaa==bbb");
+        if (aa.equals(bb))
+            System.out.println("aa equals bb");
+        if (aaa.equals(bbb))
+            System.out.println("aaa equals bbb");
+
 
     }
 }

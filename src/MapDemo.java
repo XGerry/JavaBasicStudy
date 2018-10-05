@@ -1,6 +1,5 @@
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map;
+import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
 
 public class MapDemo {
     public static void main(String[] args) {
@@ -8,6 +7,7 @@ public class MapDemo {
         map.put("1", "Value1");
         map.put("2", "Value2");
         map.put("3", "Value3");
+        map.put(null, "11");
         //第一种：普遍使用，二次取值
         System.out.println("通过Map.keySet遍历key和value：");
         for (String key :
@@ -31,5 +31,12 @@ public class MapDemo {
                 ) {
             System.out.println("key=" + entry.getKey() + " and value=" + entry.getValue());
         }
+        Vector vector = new Vector();
+        vector.add("11");
+
+//        Map<String,Integer> stringIntegerMap=new ConcurrentHashMap<>();
+//        stringIntegerMap.put(null,11);
+        HashSet hashSet = new HashSet();
+        hashSet.add(11);
     }
 }
