@@ -18,6 +18,7 @@ public class MapDemo {
                 map.values()) {
             System.out.println(value);
         }
+
         //第二种
         System.out.println("通过Map.entrySet使用iterator遍历key和value：");
         Iterator<Map.Entry<String, String>> iterator = map.entrySet().iterator();
@@ -31,6 +32,9 @@ public class MapDemo {
                 ) {
             System.out.println("key=" + entry.getKey() + " and value=" + entry.getValue());
         }
+        //第四种：尤其推荐
+        map.forEach((k, v) -> System.out.println("Key=" + k + ",Value=" + v));
+
         Vector vector = new Vector();
         vector.add("11");
 
